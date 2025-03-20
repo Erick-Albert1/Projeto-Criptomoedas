@@ -39,7 +39,7 @@
   }, [offset])
 
 async function getData(){
-fetch(`https://api.coincap.io/v2/assets?limit=10&offset=${offset}`)
+fetch(`https://api.coincap.io/v2/assets?limit=9&offset=${offset}`)
 .then(Response => Response.json())
 .then((data:DataProp) =>{
  const coinsData = data.data;
